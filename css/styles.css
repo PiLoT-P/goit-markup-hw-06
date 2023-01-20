@@ -15,6 +15,7 @@
     --primery-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
+    --accent-button-color: #188CE8;
     --white: #FFFFFF;
     --black: #000000;
     --background-color: #2F303A;
@@ -581,6 +582,7 @@ body{
 
 .subscribe-text{
     display: block;
+    margin: 0px;
     margin-bottom: 20px;
 
     color: var(--white);
@@ -592,9 +594,8 @@ body{
     text-transform: uppercase;
 }
 
-.subscribe-wrap{
+ .subscribe-form{
     display: flex;
-    justify-content: baseline;
 }
 
 .subscribe-input{
@@ -635,11 +636,6 @@ body{
 
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.subscribe-button .button-text{
-    margin-right: 10px;
-
     color: var(--white);
 
     font-style: normal;
@@ -647,10 +643,10 @@ body{
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-
 }
 
 .subscribe-button .button-img{
+    margin-left: 10px;
     fill: var(--white);
 }
 
@@ -865,6 +861,16 @@ body{
     background-color: transparent;
 }
 
+.modal-close:hover,
+.modal-close:focus{
+    color: var(--accent-color);
+}
+
+.modal-close-icon{
+    transition: color var(--transition-property);
+    fill: currentColor;
+}
+
 .is-hidden{
     opacity: 0;
     visibility: hidden;
@@ -920,6 +926,7 @@ body{
 
 .modal-input:focus {
     border-color: var(--accent-color);
+    cursor: pointer;
 }
 
 .modal-input:focus+.modal-icon {
@@ -1024,6 +1031,8 @@ body{
 
 
 .form-button{
+    transition: background-color var(--transition-property);
+
     border: 1px solid transparent;
     padding: 10px 52px;
     display: inline-block;
@@ -1031,6 +1040,7 @@ body{
     min-width: 200px;
 
     background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: var(--white);
 
     font-weight: 700;
@@ -1040,6 +1050,10 @@ body{
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
+}
+
+.form-button:hover{
+    background-color: var(--accent-button-color);
 }
 
 .button-field{
