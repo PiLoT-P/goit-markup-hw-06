@@ -497,6 +497,7 @@ body{
 }
 
 .footer-contacts .link{
+    line-height: 1.71;
     transition: color var(--transition-property);
     text-decoration: none;
     color: var(--footer-link-collor);
@@ -648,6 +649,9 @@ body{
 .subscribe-button .button-img{
     margin-left: 10px;
     fill: var(--white);
+}
+.subscribe-button:hover {
+    cursor: pointer;
 }
 
 /*Портфоліо*/
